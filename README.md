@@ -1,22 +1,19 @@
-# Welcome to your Lovable project
+
+Solana DeFi Dashboard 🏦💰
+A powerful tool for visualizing and managing your DeFi investments on the Solana blockchain.
 
 ## Project info
+This dashboard provides real-time tracking of Solana-based DeFi assets, transaction history, and market trends, all seamlessly integrated with MetaMask. It empowers users with intuitive visualizations, live price updates, and secure wallet connections for efficient portfolio management.
 
-**URL**: https://lovable.dev/projects/75d9d436-f2b4-4dc3-9d2f-49b27d1290c4
 
-## How can I edit this code?
+Features:
+- Portfolio Overview: Display assets, balances, and historical performance.
+- Transaction Tracking: Show recent trades, swaps, and transfers.
+- Market Data: Live price updates and trends.
+- Wallet Integration: Connect with MetaMask for seamless interaction.
+- Security Measures: Implement authentication and encryption.
+- User-Friendly UI: Clean visualization for easy navigation.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/75d9d436-f2b4-4dc3-9d2f-49b27d1290c4) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -60,14 +57,9 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+📜 License
+This project is licensed under the MIT License—feel free to use and modify it!
 
-Simply open [Lovable](https://lovable.dev/projects/75d9d436-f2b4-4dc3-9d2f-49b27d1290c4) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
