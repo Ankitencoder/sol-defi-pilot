@@ -32,9 +32,10 @@ const navigationItems = [
 ];
 
 export function DashboardSidebar() {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
   const location = useLocation();
   const currentPath = location.pathname;
+  const isCollapsed = state === "collapsed";
 
   const isActive = (path: string) => currentPath === path;
   const getNavClass = (active: boolean) =>
@@ -43,14 +44,14 @@ export function DashboardSidebar() {
       : "hover:bg-muted/50 transition-colors";
 
   return (
-    <Sidebar className={collapsed ? "w-14" : "w-64"} collapsible>
+    <Sidebar className={isCollapsed ? "w-14" : "w-64"} collapsible="icon">
       <SidebarContent className="bg-sidebar">
         <div className="p-4">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 gradient-purple rounded-lg flex items-center justify-center">
               <LayoutDashboard className="w-4 h-4 text-white" />
             </div>
-            {!collapsed && (
+            {!isCollapsed && (
               <div>
                 <h2 className="font-bold text-lg">Sol DeFi</h2>
                 <p className="text-xs text-muted-foreground">Investment Dashboard</p>
@@ -72,7 +73,7 @@ export function DashboardSidebar() {
                       className={getNavClass(isActive(item.url))}
                     >
                       <item.icon className="mr-3 h-4 w-4" />
-                      {!collapsed && <span>{item.title}</span>}
+                      {!isCollapsed && <span>{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -81,7 +82,7 @@ export function DashboardSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
 
-        {!collapsed && (
+        {!isCollapsed && (
           <div className="mt-auto p-4">
             <a 
               href="https://github.com/yourusername/sol-defi-dashboard" 
